@@ -12,6 +12,10 @@ body {
 .row {
 	color: #004C3F;
 }
+.mr-2 {
+	color:#FBF7ED
+}
+
 figcaption {
 	text-align: center;
 	color: #906509
