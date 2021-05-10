@@ -44,11 +44,11 @@ const App = () => {
 	const addNominees = (movie) => {
 		const newNomineeList = [...nominees, movie];
 		setNominees(newNomineeList);
-    saveToLocalStorage(newNomineeList);
-    if (newNomineeList.length >= 6) {
-      alert("Please remove a nominee before adding another one");
-    
-    };
+		saveToLocalStorage(newNomineeList);
+		if (newNomineeList.length >= 6 ) {
+			alert("Please remove a nominee before adding another one");
+			
+		};
 	};
 
 	const removeNominees = (movie) => {
@@ -60,19 +60,19 @@ const App = () => {
 		saveToLocalStorage(newNomineeList);
 	};
 
-  
+
 	return (
 		<div className='container-fluid movie-app'>
 			<div className='row d-flex align-items-center mt-4 mb-4'>
 				<MovieListHeading heading='The Shoppies' />
 				<SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
 			</div>
-			<div className='row'>
+			<div className='row d-flex align-items-center mt-4 mb-4'>
 				<MovieList
 					movies={movies}
 					handleNomineesClick={addNominees}
-          nomineeComponent={AddNominee}
-  
+					nomineeComponent={AddNominee}
+
 				/>
 			</div>
 			<div className='row d-flex align-items-center mt-4 mb-4'>

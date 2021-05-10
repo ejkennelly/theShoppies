@@ -1,6 +1,5 @@
 body {
 	background: #FBF7ED;
-	color: black;
 	font-family: 'Open Sans', sans-serif;
 	
 }
@@ -10,7 +9,9 @@ body {
 	flex-wrap: nowrap;
 	
 }
-
+.row {
+	color: #004C3F;
+}
 figcaption {
 	text-align: center;
 	color: #906509
