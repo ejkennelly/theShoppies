@@ -1,35 +1,46 @@
 body {
-	background: #141414;
-	color: #ffffff;
+	background: #FBF7ED;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	
 }
 
 .movie-app > .row {
 	overflow-x: auto;
 	flex-wrap: nowrap;
+	
 }
 
+figcaption {
+	text-align: center;
+	color: #906509
+}
 .image-container {
 	position: relative;
 	transition: transform 0.2s;
+	width: fit-content;
 }
 
 .image-container:hover {
 	cursor: pointer;
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
 }
 
 .image-container:hover .overlay {
-	opacity: 1;
+	opacity: 0.8;
 }
 
 .overlay {
 	position: absolute;
-	background: rgba(0, 0, 0, 0.8);
+	background:  #004C3F;
 	width: 100%;
 	transition: 0.5s ease;
 	opacity: 0;
 	bottom: 0;
 	font-size: 20px;
-	padding: 20px;
 	text-align: center;
+}
+
+#remove {
+	color: white;
 }
