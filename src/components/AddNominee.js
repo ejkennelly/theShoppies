@@ -7,6 +7,7 @@ const AddNominee = () => {
 			
 		</>
 	);
+
 };
 
 export default AddNominee;

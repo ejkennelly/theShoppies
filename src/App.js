@@ -80,7 +80,7 @@ const App = () => {
 			</div>
 			<div className='row d-flex align-items-center mt-4 mb-4'>
 				<MovieList
-					movies={nominees}
+					movies={nominees.slice(0,5)}
 					handleNomineesClick={removeNominees}
 					nomineeComponent={RemoveNominee}
 				/>
